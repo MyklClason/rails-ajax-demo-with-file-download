@@ -1,0 +1,10 @@
+<div>
+  <h2>Your download options are: </h2>
+  <ul class="list-inline">
+  </ul>
+  
+  <ul class="list-inline">
+    <li><%= link_to "Download Data", download_path(data: true), :method => "get" %></li>
+    <li><%= link_to "Download File", download_path(file: true), :method => "get" %></li>
+  </ul>
+</div>

@@ -1,0 +1,11 @@
+Rubocop:
+  Parameters: '-D -E --auto-gen-config --auto-correct'
+
+Breakman:
+  Parameters: '-A -q --summary'
+
+Cane:
+  Parameters: ''
+
+RailsBestPractices:
+  Parameters: '--generate'
