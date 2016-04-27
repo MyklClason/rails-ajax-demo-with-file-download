@@ -1,10 +1,10 @@
-<div>
-  <h2>Your download options are: </h2>
-  <ul class="list-inline">
-  </ul>
-  
-  <ul class="list-inline">
-    <li><%= link_to "Download Data", download_path(data: true), :method => "get" %></li>
-    <li><%= link_to "Download File", download_path(file: true), :method => "get" %></li>
-  </ul>
-</div>
+<h3>Your download options are: </h3>
+<ul>
+  <li class='one'><%= link_to "Data download", download_path(data: true), :method => "post" %></li>
+  <li class='two'><%= link_to "Sample download", download_path(sample: true), :method => "post" %></li>
+  <li class='three'><%= link_to "Demo download", download_path(demo: true), :method => "post" %></li>
+</ul>
+
+<%= button_to "Hide download Options", hide_options_path,
+   :remote => true,
+   :method => "post" %>
